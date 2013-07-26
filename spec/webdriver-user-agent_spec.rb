@@ -16,7 +16,7 @@ describe "webdriver user agent" do
   	@driver.browser.should == :firefox
   	@driver.execute_script('return navigator.userAgent').should include 'iPhone'
   	@driver.execute_script('return window.innerWidth').should == 320 
-  	@driver.execute_script('return window.innerHeight').should == 356
+  	@driver.execute_script('return window.innerHeight').should == 480
   end
 
   it "can create a new webdriver driver using chrome and iPad (landscape)" do
